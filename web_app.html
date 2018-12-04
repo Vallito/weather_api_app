@@ -7,7 +7,8 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<nav class="navbar navbar-default">
+<body>
+  <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -34,10 +35,34 @@
         <li><a href="#">Comparison</a></li>
         <li><a href="#">Data</a><li>
       </ul>
-    </div><!-- /.navbar-collapse -->
+    <div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
-</nav>
+  </nav>
 
-<session>
-<img src = Cloudiness.png>
-</session>
+<div class="container">
+  <div class="main">
+    <div class="col-md-5">
+      <h1>Summary</h1>
+      <p>
+      <img src= "Temperature.png" alt="temperature" float="left">
+      This project required the use of running an API through using the OpenWeather App.  The primary focus was to visualize the temperature of randomly selected cities around the equator.  
+      </p>
+    </div>
+  <div class="side">
+    <div class="col-md-4">
+      <h2>Visualizations</h2>
+      <div class="humid">
+        <img src="Temperature.png" alt="temperature" width=150 height=150>
+        <img src="Humidity.png" alt = humidity width=150 height = 150>
+      </div>
+      <div class="wind">
+        <img src="wind_speed.png" alt = wind width=150 height=150>
+        <img src="Cloudiness.png" alt = clouds width=150 height=150>
+      </div>
+  </div>
+</div>
+
+
+</body>
+
+</html>
