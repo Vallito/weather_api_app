@@ -2,7 +2,9 @@
 <html lang="en-us">
 <head>
   <meta charset="UTF-8">
-  <title>Weather Project</title>
+  <meta http-equiv="X-UA-Compatible" content="IT=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weather Dashboard</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -18,61 +20,57 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Weather Project</a>
+      <a class="navbar-brand" href="web_app.html">Weather Home</a>
     </div>
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="">Temperature</a></li>
-            <li><a href="#">Humidity</a></li>
-            <li><a href="#">Cloud Coverage</a></li>
-            <li><a href='#'>Wind Speed</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-        
+            <li><a href="temp.html">Temperature</a></li>
+            <li><a href="humid.html">Humidity</a></li>
+            <li><a href="cloudiness.html">Cloud Coverage</a></li>
+            <li><a href='wind.html'>Wind Speed</a></li>
           </ul>
         </li>
-        <li><a href="#">Comparison</a></li>
-        <li><a href="#">Data</a><li>
+        <li><a href="comparison.html">Comparison</a></li>
+        <li><a href="data.html">Data</a><li>
       </ul>
     <div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
   </nav>
 
 <div class="container-fluid">
-  <div class="main">
-    <div class="col-md-6">
+  <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-7">
       <div class="panel panel-default">
         <div class="panel-body">
           <h1>Temperature</h1>
           <hr>
           <p>
-          <img src= "Temperature.png" alt="temperature" float="left" width=500 height=500>
-          This graph shows an increase in temperature as we approach 0 which is the equator. 
+          <img class ="img-responsive" src= "Temperature.png" alt="temperature" float="left" style ="width:40%%">
+          This graph shows temperature around equator 
           </p>
+        </div>
+      </div>
+  
+  </div>
+  <div class="col-md-3">
+    <div class="panel panel-default">
+      <div class='panel-body'>
+        <h2>Visualizations</h2>
+        <hr>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="temp.html"><img class = "img img-responsive" src="Temperature.png" style="width:100%" alt=""></a></div>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="humid.html"><img class = "img img-responsive" src="Humidity.png" style="width:100%" alt=""></a></div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="wind.html"><img class = "img img-responsive" src="wind_speed.png" style="width:100%" alt=""></a></div>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="cloudiness.html"><img class = "img img-responsive" src="Cloudiness.png" style="width:100%" alt=""></a></div>
         </div>
       </div>
     </div>
   </div>
-  <div class="side">
-    <div class="col-md-4">
-      <div class="panel panel-default">
-        <div class='panel-body'>
-          <h2>Visualizations</h2>
-          <hr>
-          <div class="humid">
-            <a href = "humid.html" </a>
-            <img src="Temperature.png" alt="temperature" width=150 height=150>
-            <img src="Humidity.png" alt = humidity width=150 height = 150>
-          </div>
-          <div class="wind">
-            <img src="wind_speed.png" alt = wind width=150 height=150>
-            <img src="Cloudiness.png" alt = clouds width=150 height=150>
-          </div>
-        </div>
-      </div>
-    </div>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

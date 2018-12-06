@@ -2,7 +2,9 @@
 <html lang="en-us">
 <head>
   <meta charset="UTF-8">
-  <title>Weather Project</title>
+  <meta http-equiv="X-UA-Compatible" content="IT=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weather Dashboard</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -18,53 +20,38 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Weather Project</a>
+      <a class="navbar-brand" href="web_app.html">Weather Home</a>
     </div>
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="temp.html">Temperature</a></li>
-            <li><a href="#">Humidity</a></li>
-            <li><a href="#">Cloud Coverage</a></li>
-            <li><a href='#'>Wind Speed</a></li>
+            <li><a href="humid.html">Humidity</a></li>
+            <li><a href="cloudiness.html">Cloud Coverage</a></li>
+            <li><a href='wind.html'>Wind Speed</a></li>
           </ul>
         </li>
-        <li><a href="#">Comparison</a></li>
-        <li><a href="#">Data</a><li>
+        <li><a href="comparison.html">Comparison</a></li>
+        <li><a href="data.html">Data</a><li>
       </ul>
     <div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
   </nav>
-
-<div class="container-fluid">
-  <div class="main">
-    <div class="col-md-12">
-      <div class="panel panel-default">
-        <div class="panel-body">
-          <h1>Comparison</h1>
-          <hr>
-<p class="text2">Click on any plot to get an in-depth analysis.</p>
-    <div class="row" style="padding-bottom:10px">
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-            <h3>vs. Max Temperature</h3>
-            <a href="temp.html"><img class="img img-responsive" src="Temperature.png" alt="temperature" style="width:100%"></a>
+  
+  </div>
+  <div class="col-md-10">
+    <div class="panel panel-default">
+      <div class='panel-body'>
+        <h2>Visualizations</h2>
+        <hr>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="temp.html"><img class = "img img-responsive" src="Temperature.png" style="width:100%" alt=""></a></div>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="humid.html"><img class = "img img-responsive" src="Humidity.png" style="width:100%" alt=""></a></div>
         </div>
-         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-            <h3>vs. Humidity</h3>
-                <a href="humid.html"><img class="img img-responsive" src="Humidity.png" alt="humidity" style="width:100%"></a>
-        </div>
-        </div>
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                    <h3>vs. Cloudiness</h3>
-                    <a href="cloudiness.html"><img class="img img-responsive" src="Cloudiness.png" alt="clouds" style="width:100%"></a>
-            </div>
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-            <h3>vs. Wind Speed</h3>
-                <a href="wind.html"><img class="img img-responsive" src="wind_speed.png" alt="wind" style="width:100%"></a>
-            </div>
-
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="wind.html"><img class = "img img-responsive" src="wind_speed.png" style="width:100%" alt=""></a></div>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="cloudiness.html"><img class = "img img-responsive" src="Cloudiness.png" style="width:100%" alt=""></a></div>
         </div>
       </div>
     </div>
