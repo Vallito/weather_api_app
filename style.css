@@ -16,37 +16,10 @@ div .col-md-5{
     background-color: white;
 }
 
-div .col-md-4{
-    border:10px;
-    padding: 15px;
-    background-color: white;
-    position: absolute;
-    right: 10%;
-    display: block;
-    margin: auto
-}
 
 h1{
     color: green
 }
 h2{
     color: green
-}
-
-.wind {
-    background-color: white;
-    display: inline-block;
-
-}
-.wind img:hover {
-    opacity: .5;
-}
-
-.humid {
-    background-color: white;
-    display: inline-block;
-
-}
-.humid img:hover {
-    opacity: .5;
 }
